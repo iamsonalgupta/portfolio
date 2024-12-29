@@ -113,7 +113,7 @@ const Contact = () => {
             <label htmlFor="name">Name</label>
             <input
               type="text"
-              id="user_name"
+              id="name"
               name="name"
               onChange={formik.handleChange}
               placeholder="Your name"
@@ -124,7 +124,7 @@ const Contact = () => {
             <label htmlFor="email">Email</label>
             <input
               type="email"
-              id="user_email"
+              id="email"
               name="email"
               onChange={formik.handleChange}
               placeholder="Your e-mail"
