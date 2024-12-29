@@ -1,14 +1,18 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import emailjs from "@emailjs/browser";
-import { profile } from "@/config/profile.config";
+import { useFormik } from "formik";
+import { toast } from "react-toastify";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
   const [submitBtn, setSubmitBtn] = React.useState("Submit");
+  const [submitting, setSubmitting] = useState(false);
+  const searchParams = new URLSearchParams();
   useGSAP(() => {
     gsap.fromTo(
       ".section-title-overlay-text",
@@ -19,9 +23,9 @@ const Contact = () => {
           trigger: ".contact",
           start: "top bottom",
           end: "bottom top",
-          scrub: true,
-        },
-      },
+          scrub: true
+        }
+      }
     );
     gsap.from(".submit-btn", {
       scale: 0,
@@ -29,16 +33,16 @@ const Contact = () => {
       ease: "elastic",
       delay: 0.2,
       scrollTrigger: {
-        trigger: ".submit-btn",
-      },
+        trigger: ".submit-btn"
+      }
     });
     gsap.from(".contact-item", {
       scale: 0,
       duration: 0.8,
       ease: "back",
       scrollTrigger: {
-        trigger: ".contact-items",
-      },
+        trigger: ".contact-items"
+      }
     });
 
     gsap.from(".contact-input", {
@@ -46,92 +50,99 @@ const Contact = () => {
       scale: 0,
       duration: 0.8,
       scrollTrigger: {
-        trigger: ".contact-input",
-      },
+        trigger: ".contact-input"
+      }
     });
   });
-  const form = useRef<HTMLFormElement>(null);
+
+
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      message: "",
+
+      utmSource: searchParams?.get("utm_source"),
+      utmMedium: searchParams?.get("utm_medium"),
+      utmCampaign: searchParams?.get("utm_campaign")
+    },
+
+    onSubmit: async (values) => {
+
+      setSubmitting(true);
+      setSubmitBtn("Sending...");
+
+      await fetch("/api/contact-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formik.values)
+      })
+        .then((response) => {
+
+          toast.success("Request submitted successfully !");
+
+          formik.resetForm();
+
+          setSubmitBtn("Submit");
+        })
+        .catch((err) => {
+          setSubmitBtn("Submit");
+          console.log(err);
+        }).finally(() => {
+          setSubmitting(false);
+        });
+    }
+  });
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSubmitBtn("Sending...");
-    emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID as string, process.env.NEXT_PUBLIC_TEMPLATE_ID as string, form.current!, { publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY as string }).then(
-      function () {
-        console.log("SUCCESS!");
-        form.current?.reset();
-        setSubmitBtn("Success");
-        setTimeout(function () {
-          setSubmitBtn("Submit");
-        }, 3000);
-      },
-      function (error) {
-        setSubmitBtn("Submit");
-        console.log("FAILED...", error);
-      },
-    );
-  };
+    e.preventDefault()
+    formik.handleSubmit(e)
+  }
+
+
   return (
     <section id="contact" className="contact section position-relative">
+
       <span className="section-title-overlay-text">contact</span>
+
       <SectionTitle subtitle="Let's Get in touch" title="Contact me" />
 
-      {/*<div className="row pb-120 contact-items">*/}
-      {/*  <div className="row g-4">*/}
-      {/*    <div className="col-sm-6 col-xl-4 col-xxl-4">*/}
-      {/*      <div className="contact-item">*/}
-      {/*        <div className="icon-box">*/}
-      {/*          <i className="ph ph-phone-call"></i>*/}
-      {/*        </div>*/}
-      {/*        <p>{profile.mobile}</p>*/}
-      {/*      </div>*/}
-      {/*    </div>*/}
-      {/*    <div className="col-sm-6 col-xl-4 col-xxl-4">*/}
-      {/*      <div className="contact-item">*/}
-      {/*        <div className="icon-box">*/}
-      {/*          <i className="ph ph-envelope-open"></i>*/}
-      {/*        </div>*/}
-      {/*        <p>{profile.email}</p>*/}
-      {/*      </div>*/}
-      {/*    </div>*/}
-      {/*    /!*<div className="col-sm-6 col-xl-4 col-xxl-3">*!/*/}
-      {/*    /!*  <div className="contact-item">*!/*/}
-      {/*    /!*    <div className="icon-box">*!/*/}
-      {/*    /!*      <i className="ph ph-map-pin"></i>*!/*/}
-      {/*    /!*    </div>*!/*/}
-      {/*    /!*    <p>4730 Crystal Springs Dr, Los Angeles, CA</p>*!/*/}
-      {/*    /!*  </div>*!/*/}
-      {/*    /!*</div>*!/*/}
-      {/*    <div className="col-sm-6 col-xl-4 col-xxl-4 d-flex align-items-center">*/}
-      {/*      <div className="d-flex gap-3 social-icons">*/}
-      {/*        <a href="#">*/}
-      {/*          <i className="ph ph-facebook-logo"></i>*/}
-      {/*        </a>*/}
-      {/*        <a href="#">*/}
-      {/*          <i className="ph ph-linkedin-logo"></i>*/}
-      {/*        </a>*/}
-      {/*        <a href="#">*/}
-      {/*          <i className="ph ph-twitter-logo"></i>*/}
-      {/*        </a>*/}
-      {/*      </div>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
       <form ref={form} onSubmit={handleSubmit} id="contact-form" className="contact-form">
-        {/*<h4>Leave a Message</h4>*/}
         <div className="row g-4 g-xl-5">
           <div className="col-sm-6 contact-input">
             <label htmlFor="name">Name</label>
-            <input type="text" id="user_name" name="user_name" placeholder="Your name" required />
+            <input
+              type="text"
+              id="user_name"
+              name="name"
+              onChange={formik.handleChange}
+              placeholder="Your name"
+              required
+            />
           </div>
           <div className="col-sm-6 contact-input">
             <label htmlFor="email">Email</label>
-            <input type="email" id="user_email" name="user_email" placeholder="Your e-mail" required />
+            <input
+              type="email"
+              id="user_email"
+              name="email"
+              onChange={formik.handleChange}
+              placeholder="Your e-mail"
+              required
+            />
           </div>
           <div className="col-12 contact-input">
             <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your message"></textarea>
+            <textarea
+              id="message"
+              name="message"
+              onChange={formik.handleChange}
+              placeholder="Your message"
+            >
+          </textarea>
           </div>
           <div className="col-12">
+            {/* @ts-ignore */}
             <button type="submit" id="submit-btn" className="submit-btn position-relative">
               <div className="waves-top-md">
                 <span></span>

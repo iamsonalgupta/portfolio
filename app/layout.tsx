@@ -13,6 +13,7 @@ import { seo } from "@/config/profile.config";
 export const metadata: Metadata = {
   title: seo.title,
   description: seo.description,
+  keywords: seo.keywords,
   icons: '/favicon.ico'
 }
 type LayoutType = {

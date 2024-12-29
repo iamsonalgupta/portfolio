@@ -12,6 +12,13 @@ export const profile = {
 };
 
 export const seo = {
-  title: "Sonal Gupta - Personal Portfolio Template",
-  description: "Full Stack developer specializing in creating scalable, secure, and high-performance server-side applications and databases"
+  title: "Sonal Gupta - Personal Portfolio",
+  description: "Full Stack developer, Database Admin and OIC Technical Consultant specializing in creating scalable, secure, and high-performance server-side applications and databases",
+  keywords: 'Sonal Gupta, Full Stack developer, MSSQL Administrator, OIC Technical Consultant, Personal Portfolio'
 };
+
+export const socialMedia = {
+  linkedin: {
+    url: 'https://www.linkedin.com/in/sonal-gupta-6755941a2/?trk=opento_sprofile_topcard'
+  }
+}

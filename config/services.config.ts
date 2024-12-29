@@ -4,14 +4,19 @@ export const tawkTo = {
 };
 
 export const smtp = {
-  host: 'smtp.sendgrid.net',
-  port: 465,
-  username: 'apikey',
-  password: '',
+  host: "smtp-relay.sendinblue.com",
+  port: 587,
+  username: "827429001@smtp-brevo.com", // sonalgupta0330@gmail.com
+  password: "XSfLPbZMJt8DrI36",
 
-  fromEmail: 'admin@iamsonalgupta.com',
-  fromName: 'Team SYSOTEL.AI',
+  fromEmail: "info@iamsonalgupta.com",
+  fromName: "Sonal Gupta",
   bcc: [
-    'gitwithravish@gmail.com',
+    "gitwithravish@gmail.com",
+    // "sonalgupta0330@gmail.com",
   ]
+};
+
+export const keyValueHtml = (key: string, value: any) => {
+  return `<div><strong style="display: inline-block; min-width: 200px; text-align: left">${key}</strong><td>${value}</td></div>`
 }
