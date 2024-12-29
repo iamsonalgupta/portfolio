@@ -20,13 +20,13 @@ import { ToastContainer } from "react-toastify";
 //   openGraph: {
 //     title: seo.title,
 //     description: seo.description,
-//     images: "/images/profile-pic.png",
+//     images: "https://iamsonalgupta.com/images/profile-pic.png",
 //     url: seo.url
 //   },
 //   twitter: {
 //     title: seo.title,
 //     description: seo.description,
-//     images: "/images/profile-pic.png",
+//     images: "https://iamsonalgupta.com/images/profile-pic.png",
 //     site: seo.url
 //   }
 // };
@@ -54,7 +54,7 @@ export default function RootLayout({ children }: Readonly<LayoutType>) {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
-      <meta property="og:image" content="/images/profile-pic.png" />
+      <meta property="og:image" content="https://iamsonalgupta.com/images/profile-pic.png" />
 
 
       <meta name="twitter:card" content="summary_large_image" />
@@ -62,7 +62,7 @@ export default function RootLayout({ children }: Readonly<LayoutType>) {
       <meta property="twitter:url" content="https://iamsonalgupta.com/" />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content="/images/profile-pic.png" />
+      <meta name="twitter:image" content="https://iamsonalgupta.com/images/profile-pic.png" />
     </head>
     <body className={poppins.className}>
     <Bootstrap>
