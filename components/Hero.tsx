@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import HeroImg from "@/public/images/img.png";
+import HeroImg from "@/public/images/profile-pic.png";
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
 import { useGSAP } from "@gsap/react";
