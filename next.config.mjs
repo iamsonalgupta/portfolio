@@ -10,10 +10,10 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'www.iamsonalgupta.com', // Replace with your domain
+            value: 'www.iamsonalgupta.com',
           },
         ],
-        destination: 'https://iamsonalgupta.com/:path*', // Replace with your root domain
+        destination: 'https://iamsonalgupta.com/:path*',
         permanent: true,
       },
     ];
