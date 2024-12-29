@@ -91,11 +91,11 @@ export default function Home() {
               {/*    <span className="text">how i work</span>*/}
               {/*  </Link>*/}
               {/*</li>*/}
-              <li className="nav-link">
-                <Link href="#testimonials">
-                  <span className="text">testimonials</span>
-                </Link>
-              </li>
+              {/*<li className="nav-link">*/}
+              {/*  <Link href="#testimonials">*/}
+              {/*    <span className="text">testimonials</span>*/}
+              {/*  </Link>*/}
+              {/*</li>*/}
               <li className="nav-link">
                 <Link href="#contact">
                   <span className="text">contact me</span>
