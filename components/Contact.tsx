@@ -79,7 +79,7 @@ const Contact = () => {
       })
         .then((response) => {
 
-          toast.success("Request submitted successfully !");
+          toast.success("Inquiry submitted !");
 
           formik.resetForm();
 

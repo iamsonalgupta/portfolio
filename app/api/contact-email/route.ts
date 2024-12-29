@@ -30,7 +30,7 @@ export async function POST(req: NextApiRequest, res: any) {
 
   // Setup email data
   const mailOptions = {
-    from: smtp.fromEmail,
+    from: `Sonal Gupta <${smtp.fromEmail}>`,
     to: contactInquiryEmail.to,
     bcc: smtp.bcc,
     subject: "New Contact Inquiry Received",

@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import TawkTo from "@/components/scripts/TawkTo"
 import React from "react";
 import { seo } from "@/config/profile.config";
+import {ToastContainer} from "react-toastify";
 
 export const metadata: Metadata = {
   title: seo.title,
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: Readonly<LayoutType>) {
           {/*<Demos />*/}
           {children}
           <TawkTo />
+          <ToastContainer />
         </Bootstrap>
       </body>
     </html>
