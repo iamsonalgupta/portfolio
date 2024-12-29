@@ -31,7 +31,7 @@ export default function RootLayout({ children }: Readonly<LayoutType>) {
 
       </style>
         <Bootstrap>
-          <ColorSwitcher />
+          {/*<ColorSwitcher />*/}
           {/*<Demos />*/}
           {children}
           <TawkTo />
