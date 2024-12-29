@@ -75,49 +75,49 @@ const Contact = () => {
       <span className="section-title-overlay-text">contact</span>
       <SectionTitle subtitle="Let's Get in touch" title="Contact me" />
 
-      <div className="row pb-120 contact-items">
-        <div className="row g-4">
-          <div className="col-sm-6 col-xl-4 col-xxl-4">
-            <div className="contact-item">
-              <div className="icon-box">
-                <i className="ph ph-phone-call"></i>
-              </div>
-              <p>{profile.mobile}</p>
-            </div>
-          </div>
-          <div className="col-sm-6 col-xl-4 col-xxl-4">
-            <div className="contact-item">
-              <div className="icon-box">
-                <i className="ph ph-envelope-open"></i>
-              </div>
-              <p>{profile.email}</p>
-            </div>
-          </div>
-          {/*<div className="col-sm-6 col-xl-4 col-xxl-3">*/}
-          {/*  <div className="contact-item">*/}
-          {/*    <div className="icon-box">*/}
-          {/*      <i className="ph ph-map-pin"></i>*/}
-          {/*    </div>*/}
-          {/*    <p>4730 Crystal Springs Dr, Los Angeles, CA</p>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
-          <div className="col-sm-6 col-xl-4 col-xxl-4 d-flex align-items-center">
-            <div className="d-flex gap-3 social-icons">
-              <a href="#">
-                <i className="ph ph-facebook-logo"></i>
-              </a>
-              <a href="#">
-                <i className="ph ph-linkedin-logo"></i>
-              </a>
-              <a href="#">
-                <i className="ph ph-twitter-logo"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/*<div className="row pb-120 contact-items">*/}
+      {/*  <div className="row g-4">*/}
+      {/*    <div className="col-sm-6 col-xl-4 col-xxl-4">*/}
+      {/*      <div className="contact-item">*/}
+      {/*        <div className="icon-box">*/}
+      {/*          <i className="ph ph-phone-call"></i>*/}
+      {/*        </div>*/}
+      {/*        <p>{profile.mobile}</p>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*    <div className="col-sm-6 col-xl-4 col-xxl-4">*/}
+      {/*      <div className="contact-item">*/}
+      {/*        <div className="icon-box">*/}
+      {/*          <i className="ph ph-envelope-open"></i>*/}
+      {/*        </div>*/}
+      {/*        <p>{profile.email}</p>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*    /!*<div className="col-sm-6 col-xl-4 col-xxl-3">*!/*/}
+      {/*    /!*  <div className="contact-item">*!/*/}
+      {/*    /!*    <div className="icon-box">*!/*/}
+      {/*    /!*      <i className="ph ph-map-pin"></i>*!/*/}
+      {/*    /!*    </div>*!/*/}
+      {/*    /!*    <p>4730 Crystal Springs Dr, Los Angeles, CA</p>*!/*/}
+      {/*    /!*  </div>*!/*/}
+      {/*    /!*</div>*!/*/}
+      {/*    <div className="col-sm-6 col-xl-4 col-xxl-4 d-flex align-items-center">*/}
+      {/*      <div className="d-flex gap-3 social-icons">*/}
+      {/*        <a href="#">*/}
+      {/*          <i className="ph ph-facebook-logo"></i>*/}
+      {/*        </a>*/}
+      {/*        <a href="#">*/}
+      {/*          <i className="ph ph-linkedin-logo"></i>*/}
+      {/*        </a>*/}
+      {/*        <a href="#">*/}
+      {/*          <i className="ph ph-twitter-logo"></i>*/}
+      {/*        </a>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       <form ref={form} onSubmit={handleSubmit} id="contact-form" className="contact-form">
-        <h4>Leave a Message</h4>
+        {/*<h4>Leave a Message</h4>*/}
         <div className="row g-4 g-xl-5">
           <div className="col-sm-6 contact-input">
             <label htmlFor="name">Name</label>

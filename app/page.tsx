@@ -74,6 +74,7 @@ export default function Home() {
 
             {/* blog */}
             <Blogs />
+
             {/* <!-- testimonials --> */}
             <Testimonials />
 
