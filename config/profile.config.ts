@@ -12,6 +12,7 @@ export const profile = {
 };
 
 export const seo = {
+  url: 'https://iamsonalgupta.com',
   title: "Sonal Gupta - Personal Portfolio",
   description: "Full Stack developer, Database Admin and OIC Technical Consultant specializing in creating scalable, secure, and high-performance server-side applications and databases",
   keywords: 'Sonal Gupta, Full Stack developer, MSSQL Administrator, OIC Technical Consultant, Personal Portfolio'

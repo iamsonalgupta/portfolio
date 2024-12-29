@@ -1,43 +1,76 @@
-import type { Metadata } from "next"
-import { Poppins } from "next/font/google"
-import "@/public/scss/styles.scss"
-import ColorSwitcher from "@/components/ColorSwitcher"
-import Bootstrap from "@/components/Bootstrap"
-import gsap from "gsap"
-import { useGSAP } from "@gsap/react"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import TawkTo from "@/components/scripts/TawkTo"
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import "@/public/scss/styles.scss";
+import ColorSwitcher from "@/components/ColorSwitcher";
+import Bootstrap from "@/components/Bootstrap";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import TawkTo from "@/components/scripts/TawkTo";
 import React from "react";
 import { seo } from "@/config/profile.config";
-import {ToastContainer} from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: seo.title,
   description: seo.description,
   keywords: seo.keywords,
-  icons: '/favicon.ico'
-}
+  icons: "/favicon.ico",
+  openGraph: {
+    title: seo.title,
+    description: seo.description,
+    images: "/images/img.png",
+    url: seo.url
+  },
+  twitter: {
+    title: seo.title,
+    description: seo.description,
+    images: "/images/img.png",
+    site: seo.url
+  }
+};
+
 type LayoutType = {
   children: React.ReactNode
 }
-const poppins = Poppins({ weight: ["300", "400", "500", "600", "700", "800"], subsets: ["latin"] })
-gsap.registerPlugin(useGSAP)
-gsap.registerPlugin(ScrollTrigger)
+
+const poppins = Poppins({ weight: ["300", "400", "500", "600", "700", "800"], subsets: ["latin"] });
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
+
 export default function RootLayout({ children }: Readonly<LayoutType>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
-      <style>
+    <head>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
 
-      </style>
-        <Bootstrap>
-          {/*<ColorSwitcher />*/}
-          {/*<Demos />*/}
-          {children}
-          <TawkTo />
-          <ToastContainer />
-        </Bootstrap>
-      </body>
+      {/*<title>{seo.title}</title>*/}
+      {/*<meta name="description" content={seo.description} />*/}
+
+      {/*<meta property="og:url" content="https://iamsonalgupta.com/" />*/}
+      {/*<meta property="og:type" content="website" />*/}
+      {/*<meta property="og:title" content={seo.title} />*/}
+      {/*<meta property="og:description" content={seo.description} />*/}
+      {/*<meta property="og:image" content="/images/img.png" />*/}
+
+
+      {/*<meta name="twitter:card" content="summary_large_image" />*/}
+      {/*<meta property="twitter:domain" content="iamsonalgupta.com" />*/}
+      {/*<meta property="twitter:url" content="https://iamsonalgupta.com/" />*/}
+      {/*<meta name="twitter:title" content={seo.title} />*/}
+      {/*<meta name="twitter:description" content={seo.description} />*/}
+      {/*<meta name="twitter:image" content="/images/img.png" />*/}
+    </head>
+    <body className={poppins.className}>
+    <Bootstrap>
+      {/*<ColorSwitcher />*/}
+      {/*<Demos />*/}
+      {children}
+      <TawkTo />
+      <ToastContainer />
+    </Bootstrap>
+    </body>
     </html>
-  )
+  );
 }
