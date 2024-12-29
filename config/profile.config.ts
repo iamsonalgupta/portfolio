@@ -1,7 +1,7 @@
 export const profile = {
-  firstName: 'Sonal',
-  lastName: 'Gupta',
-  fullName: 'Sonal Gupta',
+  firstName: "Sonal",
+  lastName: "Gupta",
+  fullName: "Sonal Gupta",
   email: "sonalgupta0330@gmail.com",
   dob: "30/03/2001",
   mobile: "+91 7434086144",
@@ -9,4 +9,9 @@ export const profile = {
     city: "Ahmedabad",
     state: "Gujarat"
   }
+};
+
+export const seo = {
+  title: "Sonal Gupta - Personal Portfolio Template",
+  description: "Full Stack developer specializing in creating scalable, secure, and high-performance server-side applications and databases"
 };

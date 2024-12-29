@@ -8,10 +8,12 @@ import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import TawkTo from "@/components/scripts/TawkTo"
 import React from "react";
+import { seo } from "@/config/profile.config";
 
 export const metadata: Metadata = {
-  title: "Sonal Gupta - Personal Portfolio Template",
-  description: "Backend developer specializing in creating scalable, secure, and high-performance server-side applications with a passion for APIs and database design",
+  title: seo.title,
+  description: seo.description,
+  icons: '/favicon.ico'
 }
 type LayoutType = {
   children: React.ReactNode

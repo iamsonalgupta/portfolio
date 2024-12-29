@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import arrow from "@/public/images/arrow.png";
 import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -59,7 +57,8 @@ const Experience = () => {
             ))}
           </div>
 
-          <Link href="/resumes/Node JS Resume - Sonal Gupta.pdf" target="_blank" className="download-cv position-relative" download>
+          <Link href="/resumes/Node JS Resume - Sonal Gupta.pdf" target="_blank"
+                className="download-cv position-relative" download>
             <div className="waves-top-md">
               <span></span>
               <span></span>
