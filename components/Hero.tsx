@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
 import gsap from "gsap";
-import { profile } from "@/config/profile.config";
+import { profile, seo } from "@/config/profile.config";
 
 const Hero = ({ classes }: { classes?: string }) => {
   useGSAP(() => {
@@ -23,12 +23,10 @@ const Hero = ({ classes }: { classes?: string }) => {
     <section id="top" className={`hero ${classes}`}>
       <div className="row gx-4 justify-content-center align-items-center">
         <div className="col-12 col-md-6 col-xl-6 hero-content">
-          <div>
+          <div className="mb-3">
             <h4 className="text-uppercase freelancer">HI, I am</h4>
             {/* SOFTWARE ENGINEER */}
-            <h1 style={{
-              fontSize: 84
-            }}>
+            <h1 style={{ fontSize: 84 }}>
               {profile.fullName}
             </h1>
             {/*<Typewriter*/}
@@ -39,9 +37,10 @@ const Hero = ({ classes }: { classes?: string }) => {
             {/*    loop: true,*/}
             {/*  }}*/}
             {/*/>*/}
-            <p className="description">based in {profile.address.city}, {profile.address.state}</p>
+            <h2 className="fw-normal fs-5">{seo.description}</h2>
+            {/*<p className="description">based in {profile.address.city}, {profile.address.state}</p>*/}
           </div>
-          <div className="d-flex gap-4">
+          <div className="d-flex gap-4 mt-5">
             <Link href="#projects" className="btn work-btn text-capitalize btn-secondary">
               view my work
             </Link>

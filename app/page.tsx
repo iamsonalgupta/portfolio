@@ -1,25 +1,15 @@
 "use client";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import Services from "@/components/Services";
-import Attainments from "@/components/Attainments";
-import FunFacts from "@/components/FunFacts";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
-import HowIWork from "@/components/HowIWork";
-import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import Logo from "@/public/images/logo.png";
-import Icon from "@/public/images/icon.png";
 import Link from "next/link";
-import Blogs from "@/components/Blogs";
 import { SolarFileTextBoldDuotone } from "@/components/icons/SolarFileTextBoldDuotone";
-import { SvgSpinnersBarsFade } from "@/components/icons/SvgSpinnersBarsFade";
 import { SvgSpinners270Ring } from "@/components/icons/SvgSpinners270Ring";
-import PolygonBackground from "@/components/TraingleAnim";
+
 export default function Home() {
   const [navOpen, setNavOpen] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -40,7 +30,7 @@ export default function Home() {
   if (loading) {
     return (
       <div className="loader-container w-100  d-flex align-items-center justify-content-center" style={{
-        background: 'rgba(215, 211, 201)'
+        background: "rgba(215, 211, 201)"
       }}>
         <SvgSpinners270Ring height={60} />
 
@@ -51,14 +41,10 @@ export default function Home() {
     <>
       {/*<Header navOpen={navOpen} classes="d-xl-none" setNavOpen={setNavOpen} />*/}
 
-      <PolygonBackground />
-
-      {/* <!-- main content --> */}
       <main className="container-xl">
         <div className="col-12" data-bs-spy="scroll" data-bs-target="#navigation">
-          {/* <!-- hero --> */}
 
-          <nav className={`bg-transparent navigation-sticky ${navOpen ? "opened" : ""}`} id="navigation">
+          <nav className={`navigation-sticky ${navOpen ? "opened" : ""}`} id="navigation">
             {/*<Image src={Logo} className="d-xl-none d-xxl-block" height="40" alt="logo" />*/}
             <div className="d-flex align-items-center gap-2">
               <SolarFileTextBoldDuotone className="text-dark" />
@@ -72,7 +58,7 @@ export default function Home() {
               {/*</li>*/}
               <li className="nav-link">
                 <Link href="#about_me">
-                  <span className="text">about me</span>
+                  <span className="text">about</span>
                 </Link>
               </li>
               <li className="nav-link">
@@ -117,6 +103,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+
           <Hero classes="hero-left-bar" />
 
 

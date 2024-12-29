@@ -16,28 +16,20 @@ import techshopBig from "@/public/images/techshop-big.png";
 import quickbiteBig from "@/public/images/quickbite-big.png";
 const projects = [
   {
-    name: "TechShop",
+    name: "Wurklist",
     description: `TechShop is a state-of-the-art e-commerce platform designed to cater to the diverse needs of both businesses and consumers, providing a seamless shopping experience powered by cutting-edge technology and innovative design. The platform's sleek design, characterized by a clean layout and easy navigation, ensures that users can effortlessly browse through products, categories, and deals. TechShop offers a comprehensive product catalog management system, allowing businesses to showcase their products with rich media, detailed descriptions, and customer reviews. The checkout process on TechShop is designed to be smooth and hassle-free, minimizing cart abandonment rates and enhancing customer satisfaction. The platform integrates with multiple payment gateways, offering a variety of payment options, including credit/debit cards, digital wallets, and bank transfers. TechShop leverages advanced data analytics to offer personalized shopping experiences tailored to individual preferences and behaviors. The backend of TechShop is built using modern technologies, ensuring scalability, reliability, and security. The platform is compliant with international data protection regulations, employing industry-standard encryption and security protocols to safeguard user information. Looking ahead, TechShop aims to expand its reach and continue innovating to meet the evolving needs of the e-commerce landscape, with plans to integrate augmented reality for virtual try-ons and expand its global logistics network.`,
-    tags: ["design", "frontend", "backend"],
-    category: "E-commerce Platform",
+    tags: ["frontend", "backend", "database"],
+    category: "An application that brings users and bots on the same platform to solve a business use case in the most effective and efficient way using Task Manager, Timesheet, Bot Manager and Workflows",
     image: projectOne,
     bigImg: techshopBig,
   },
   {
-    name: "Edumaster",
+    name: "Email AI",
     description: `Edumaster is a comprehensive online learning platform that empowers students and educators alike to explore new horizons in education. The platform offers a rich array of courses and educational resources that span multiple disciplines and skill levels. Edumaster's innovative approach to course delivery emphasizes engagement and interactivity, leveraging multimedia elements, including videos, animations, quizzes, and interactive exercises, to create immersive learning experiences. Edumaster offers personalized learning journeys tailored to individual goals, preferences, and learning styles. The platform adapts to the pace and progress of each student, providing targeted recommendations and feedback that support continuous improvement and mastery. The platform also offers a comprehensive suite of features for educators, including course authoring tools, analytics dashboards, and communication channels. Edumaster fosters a vibrant community of learners and educators who collaborate and connect through the platform. Discussion forums, peer reviews, group projects, and live sessions create opportunities for meaningful interaction and knowledge exchange. The platform is optimized for accessibility, offering features such as closed captioning, screen reader compatibility, and multilingual support. Looking to the future, Edumaster is poised to lead the way in shaping the future of education, with plans to incorporate cutting-edge technologies such as virtual reality and artificial intelligence.`,
-    tags: ["design", "frontend", "backend"],
-    category: "Online Learning Platform",
+    tags: ["frontend", "backend", "database", "power automate"],
+    category: "Email AI is a web application that automates email processing, classification, and assignment using AI and rule-based logic. It ensures efficient handling of email workflows, enabling seamless collaboration and task completion",
     image: projectTwo,
     bigImg: edumasterBig,
-  },
-  {
-    name: "QuickBite",
-    description: `QuickBite is a groundbreaking mobile app that redefines the food delivery experience, offering users a seamless, user-friendly, and innovative way to satisfy their cravings with just a few taps on their smartphones. The app's intuitive interface allows users to browse a vast selection of restaurants and cuisines, from local favorites to international delicacies. QuickBite offers real-time order tracking, allowing users to monitor the status of their delivery from preparation to arrival. QuickBite has established a highly efficient delivery network, partnering with a wide range of restaurants and local eateries to offer users an extensive selection of options. The app's sophisticated logistics system optimizes delivery routes and dispatches, ensuring that orders are fulfilled promptly and accurately. QuickBite prioritizes user-centric design, making the app accessible and easy to use for everyone. The app's clean and modern interface is complemented by seamless navigation and intuitive controls. To further enhance customer satisfaction and engagement, QuickBite offers a variety of promotions and loyalty programs. Users can take advantage of exclusive discounts, special offers, and rewards that incentivize repeat orders and foster brand loyalty. QuickBite is committed to ensuring the highest standards of quality and sustainability in its operations. The app collaborates with restaurants to ensure that food is delivered fresh and in an eco-friendly manner.`,
-    tags: ["ui/ux design", "mobile development"],
-    category: "Food Delivery Mobile App",
-    image: projectThree,
-    bigImg: quickbiteBig,
   },
 ];
 
@@ -62,18 +54,17 @@ const Projects = () => {
         <SectionTitle subtitle="Some of my most recent projects" title="My Featured Projects" />
         <div className="row pb-60 project-list g-4">
           {projects.map((project) => (
-            <div key={project.name} onClick={() => setCurrentProject(project)} className="col-sm-6 col-lg-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <div className="single-project">
+            <div key={project.name} onClick={() => setCurrentProject(project)} className="col-sm-6 col-lg-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <div className="single-project border rounded border-dark p-3 shadow-sm h-100">
                 <div className="project-card">
                   <div className="card-inner"></div>
-                  <Image src={project.image} className="img-fluid w-100 card-img h-100" alt="" />
                   <div className="card-arrow">
                     <div className="arrow-inner">
                       <i className="ph ph-arrow-up-right"></i>
                     </div>
                   </div>
                 </div>
-                <div className="project-info">
+                <div className="project-info mt-2">
                   <h2>{project.name}</h2>
                   <p>{project.category}</p>
                   <div className="tags d-flex align-items-center gap-1">
@@ -104,7 +95,7 @@ const Projects = () => {
                 <button type="button" className="btn-close fs-3" data-bs-dismiss="modal" aria-label="Close">
                   <i className="ph ph-x"></i>
                 </button>
-                <Image src={currentProject.bigImg} className="w-100 img-fluid project-details-img rounded-3 mb-3 mb-xl-4" alt="" />
+
                 <div className="row gx-4 gy-4 gy-md-0">
                   <div className="col-md-7 col-xl-9">
                     <h1 className="mb-3 fw-semibold" id="project-title">
@@ -172,45 +163,7 @@ const Projects = () => {
                     <h5 className="mb-3">Outcome:</h5>
                     <p>The blog quickly gained traction, attracting a growing audience and enhancing the influencer’s online presence. The user-friendly design and seamless social media integration led to higher engagement rates and increased content sharing.</p>
                   </div>
-                  <form className="contact-form full-width">
-                    <h3 className="mb-3">Have project in mind? Let&apos;s discuss</h3>
-                    <p className="mb-4 mb-xl-5 pb-2">Get in touch with us to see how we can help you with your project</p>
-                    <div className="row g-4 g-xl-5">
-                      <div className="col-sm-6 contact-input">
-                        <label htmlFor="name">Name</label>
-                        <input type="text" id="name" name="user_name" placeholder="Your name" required />
-                      </div>
-                      <div className="col-sm-6 contact-input">
-                        <label htmlFor="email">Email</label>
-                        <input type="email" id="email" name="user_email" placeholder="Your e-mail" required />
-                      </div>
-                      <div className="col-12 contact-input">
-                        <label htmlFor="service">Service</label>
-                        <input name="service" placeholder="Your Serivice" />
-                      </div>
-                      <div className="col-12 contact-input">
-                        <label htmlFor="message">Message</label>
-                        <textarea name="message" placeholder="Your message"></textarea>
-                      </div>
-                      <div className="col-12">
-                        <button type="submit" className="submit-btn position-relative">
-                          <div className="waves-top-md">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                          submit
-                          <div className="waves-bottom-md">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
+
                 </div>
               </div>
             </div>
