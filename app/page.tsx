@@ -19,6 +19,7 @@ import Blogs from "@/components/Blogs";
 import { SolarFileTextBoldDuotone } from "@/components/icons/SolarFileTextBoldDuotone";
 import { SvgSpinnersBarsFade } from "@/components/icons/SvgSpinnersBarsFade";
 import { SvgSpinners270Ring } from "@/components/icons/SvgSpinners270Ring";
+import PolygonBackground from "@/components/TraingleAnim";
 export default function Home() {
   const [navOpen, setNavOpen] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -48,15 +49,16 @@ export default function Home() {
   }
   return (
     <>
+      {/*<Header navOpen={navOpen} classes="d-xl-none" setNavOpen={setNavOpen} />*/}
 
-      <Header navOpen={navOpen} classes="d-xl-none" setNavOpen={setNavOpen} />
+      <PolygonBackground />
 
       {/* <!-- main content --> */}
       <main className="container-xl">
         <div className="col-12" data-bs-spy="scroll" data-bs-target="#navigation">
           {/* <!-- hero --> */}
 
-          <nav className={`navigation-sticky ${navOpen ? "opened" : ""}`} id="navigation">
+          <nav className={`bg-transparent navigation-sticky ${navOpen ? "opened" : ""}`} id="navigation">
             {/*<Image src={Logo} className="d-xl-none d-xxl-block" height="40" alt="logo" />*/}
             <div className="d-flex align-items-center gap-2">
               <SolarFileTextBoldDuotone className="text-dark" />
