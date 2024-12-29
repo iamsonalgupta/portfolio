@@ -3,6 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
 import { keyValueHtml, smtp } from "@/config/services.config";
 import { contactInquiryEmail } from "@/config/mail.config";
+import { NextRequest } from "next/server";
 
 // Define the types for the request body
 interface EmailFormData {
@@ -12,11 +13,9 @@ interface EmailFormData {
 }
 
 
-export async function POST(req: NextApiRequest, res: any) {
+export async function POST(req: NextRequest) {
 
-  // @ts-ignore
   const params: EmailFormData = await req.json();
-
 
   const transporter = nodemailer.createTransport({
     host: smtp.host,
@@ -50,7 +49,7 @@ export async function POST(req: NextApiRequest, res: any) {
 }
 
 
-export const generateAdminMailHtml = (params: any) => {
+const generateAdminMailHtml = (params: any) => {
 
   return `
         <p>New contact enquiry has been received. Find the details below</p>
