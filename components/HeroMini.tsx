@@ -45,9 +45,12 @@ const HeroMini = () => {
 
           <div className="mt-4">
             <p className="desc">
-              I have experience in <HighlightWrapper text="NodeJS" />, <HighlightWrapper text="Typescript" />, <HighlightWrapper text="ExpressJS" />, <HighlightWrapper text="MongoDB" /> and <HighlightWrapper text="MSSQL" />. Over the past 2 years I have
-              built{' '}
-              <HighlightWrapper text="REST APIs" />, developed <HighlightWrapper text="Third Party Integrations" /> and worked as <HighlightWrapper text="Database Administration" /> to implement secure and
+              I have experience in <HighlightWrapper text="NodeJS" />, <HighlightWrapper
+              text="Typescript" />, <HighlightWrapper text="ExpressJS" />, <HighlightWrapper
+              text="MongoDB" /> and <HighlightWrapper text="MSSQL" />. Over the past 2 years I have
+              built{" "}
+              <HighlightWrapper text="REST APIs" />, developed <HighlightWrapper text="Third Party Integrations" /> and
+              worked as <HighlightWrapper text="Database Administration" /> to implement secure and
               scalable databases.
             </p>
           </div>
@@ -58,10 +61,10 @@ const HeroMini = () => {
   );
 };
 
-const HighlightWrapper = ({text}: {text: string}) => (
+const HighlightWrapper = ({ text }: { text: string }) => (
   <strong className="underlinedXfst-italic">
     {text}
   </strong>
-)
+);
 
-    export default HeroMini;
+export default HeroMini;
