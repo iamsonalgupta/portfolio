@@ -141,25 +141,10 @@ const Contact = () => {
             >
           </textarea>
           </div>
-          <div className="col-12">
-            {/* @ts-ignore */}
-            <button type="submit" id="submit-btn" className="submit-btn position-relative">
-              <div className="waves-top-md">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              {submitBtn}
-              <div className="waves-bottom-md">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </button>
-          </div>
         </div>
+        <button className="btn work-btn text-capitalize btn-secondary" type="submit">
+          Submit
+        </button>
       </form>
       {/*<div className="col mt-5 pt-5 next-chapter">*/}
       {/*  <span className="page">11/11</span>*/}
