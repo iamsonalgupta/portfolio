@@ -13,11 +13,26 @@ const Hero = ({ classes }: { classes?: string }) => {
     gsap.from(".img-wrapper", { duration: 1.5, scale: 1.5, ease: "back", delay: 0.3, opacity: 0 });
     gsap.from(".work-btn", { duration: 1.2, scale: 0, opacity: 0, ease: "bounce" });
     gsap.from(".contact-btn", { duration: 1.2, scale: 0, opacity: 0, ease: "bounce" });
+    gsap.from(".profilename", {
+      opacity: 0,
+      y: 20,
+      duration: 1.2,
+      delay: 0.4,
+      ease: "power2.out",
+    });
+
+    gsap.from(".description", {
+      opacity: 0,
+      y: 20,
+      duration: 1.4,
+      delay: 0.8,
+      ease: "power2.out",
+    });
 
     const freelancer = SplitType.create(".freelancer").chars;
     const desc = SplitType.create(".description").chars;
     gsap.from(freelancer, { duration: 1.5, rotateX: 180, opacity: 0, ease: "bounce", stagger: 0.05 });
-    gsap.from(desc, { duration: 1, rotateY: 180, stagger: 0.05 });
+    gsap.from(desc, { duration: 1, fade: 1.5 });
   });
   return (
     <section id="top" className={`hero ${classes}`}>
@@ -26,7 +41,7 @@ const Hero = ({ classes }: { classes?: string }) => {
           <div className="mb-3">
             <h4 className="text-uppercase freelancer">HI, I am</h4>
             {/* SOFTWARE ENGINEER */}
-            <h1 style={{ fontSize: 84 }}>
+            <h1 className="profilename" style={{ fontSize: 84 }}>
               {profile.fullName}
             </h1>
 
@@ -38,7 +53,7 @@ const Hero = ({ classes }: { classes?: string }) => {
             {/*    loop: true,*/}
             {/*  }}*/}
             {/*/>*/}
-            <h2 className="fw-normal fs-5">{seo.description}</h2>
+            <h2 className="description fw-normal fs-5">{seo.description}</h2>
             {/*<p className="description">based in {profile.address.city}, {profile.address.state}</p>*/}
           </div>
           <div className="d-flex gap-4 mt-5">

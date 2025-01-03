@@ -2,8 +2,26 @@ import React from "react";
 import Image from "next/image";
 import HeroImg from "@/public/images/profile-pic.png";
 import { profile, seo } from "@/config/profile.config";
+import gsap from "gsap";
 
 const HeroMini = () => {
+
+  gsap.from(".profilename", {
+    opacity: 0,
+    y: 20,
+    duration: 1,
+    delay: 0.5,
+    ease: "power2.out",
+  });
+
+  gsap.from(".description", {
+    opacity: 0,
+    y: 20,
+    duration: 1.2,
+    delay: 0.4,
+    ease: "power2.out",
+  });
+
   return (
     <div>
       <div className="d-flex flex-column gap-3 mt-4">
@@ -22,7 +40,7 @@ const HeroMini = () => {
 
             <div>
               <p className="freelancer m-0" style={{ lineHeight: 1 }}>HI, I am</p>
-              <h1 className="fw-600" style={{ fontSize: 40 }}>
+              <h1 className="fw-600 profilename" style={{ fontSize: 40 }}>
                 {profile.fullName}
               </h1>
             </div>
@@ -53,11 +71,11 @@ const HeroMini = () => {
 
         <div>
           <div>
-            <p className="fw-normal fs-6">{seo.description}</p>
+            <p className="fw-normal fs-6 description">{seo.description}</p>
           </div>
 
           <div className="mt-4">
-            <p className="desc">
+            <p className="desc description">
               I have experience in <HighlightWrapper text="NodeJS" />, <HighlightWrapper
               text="Typescript" />, <HighlightWrapper text="ExpressJS" />, <HighlightWrapper
               text="MongoDB" /> and <HighlightWrapper text="MSSQL" />. Over the past 2 years I have

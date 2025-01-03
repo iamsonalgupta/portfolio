@@ -8,6 +8,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SectionTitle from "./SectionTitle";
 import SectionOverlayText from "./SectionOverlayText";
 import { skills } from "@/config/skills.config";
+import { TdesignSwapLeft } from "@/components/icons/TdesignSwapLeft";
+import { TdesignSwapRight } from "@/components/icons/TdesignSwapRight";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -92,172 +94,17 @@ const Services = () => {
             </div>
           </SwiperSlide>
         ))}
-        {/*<SwiperSlide className="overflow-visible p-3">*/}
-
-
-
-        {/*  <div className="service-card">*/}
-        {/*    <div className="card-inner"></div>*/}
-        {/*    <div className="content">*/}
-        {/*      <div className="number-circle">*/}
-        {/*        <div className="waves-top-sm">*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*        </div>*/}
-        {/*        <h2>01</h2>*/}
-        {/*        <div className="waves-bottom-sm">*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*      <h4>Backend Development</h4>*/}
-        {/*      <ul className="service-list">*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Node JS*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Express JS*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Typescript*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Prototyping*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Mobile App Design*/}
-        {/*        </li>*/}
-        {/*      </ul>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</SwiperSlide>*/}
-        {/*<SwiperSlide className="overflow-visible p-3">*/}
-        {/*  <div className="service-card">*/}
-        {/*    <div className="card-inner"></div>*/}
-        {/*    <div className="content">*/}
-        {/*      <div className="number-circle">*/}
-        {/*        <div className="waves-top-sm">*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*        </div>*/}
-        {/*        <h2>02</h2>*/}
-        {/*        <div className="waves-bottom-sm">*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*      <h4>Development</h4>*/}
-        {/*      <ul className="service-list">*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Front-End Development*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Back-End Development*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Full-Stack Development*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Database Management*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> API Integration Design*/}
-        {/*        </li>*/}
-        {/*      </ul>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</SwiperSlide>*/}
-        {/*<SwiperSlide className="overflow-visible p-3">*/}
-        {/*  <div className="service-card">*/}
-        {/*    <div className="card-inner"></div>*/}
-        {/*    <div className="content">*/}
-        {/*      <div className="number-circle">*/}
-        {/*        <div className="waves-top-sm">*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*        </div>*/}
-        {/*        <h2>03</h2>*/}
-        {/*        <div className="waves-bottom-sm">*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*      <h4>Illustration</h4>*/}
-        {/*      <ul className="service-list">*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Character Design*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Icon Set*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Illustration Guide*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Illustration Set*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Motion Graphic Design*/}
-        {/*        </li>*/}
-        {/*      </ul>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</SwiperSlide>*/}
-        {/*<SwiperSlide className="overflow-visible p-3">*/}
-        {/*  <div className="service-card">*/}
-        {/*    <div className="card-inner"></div>*/}
-        {/*    <div className="content">*/}
-        {/*      <div className="number-circle">*/}
-        {/*        <div className="waves-top-sm">*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*        </div>*/}
-        {/*        <h2>04</h2>*/}
-        {/*        <div className="waves-bottom-sm">*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*          <span></span>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*      <h4>App Development</h4>*/}
-        {/*      <ul className="service-list">*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Android App*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Ios App*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Wireframing*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Prototyping*/}
-        {/*        </li>*/}
-        {/*        <li>*/}
-        {/*          <i className="ph ph-caret-double-right"></i> Mobile App Design*/}
-        {/*        </li>*/}
-        {/*      </ul>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</SwiperSlide>*/}
 
         <div className="swiper-pagination"></div>
       </Swiper>
+
+      <div className="d-flex align-items-center justify-content-around fst-italic text-muted">
+        <div className="d-flex gap-2 align-items-center">
+          <TdesignSwapLeft />
+          <span>Swipe</span>
+          <TdesignSwapRight />
+        </div>
+      </div>
       {/*<div className="col-12">*/}
       {/*  <Link href="#attainments" className="d-flex gap-4 align-items-center next-chapter">*/}
       {/*    <span className="page">03/11</span>*/}

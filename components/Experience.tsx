@@ -49,7 +49,10 @@ const Experience = () => {
           <div className="experience-wrapper d-flex flex-column">
             {experience.timeline.map(timelineItem => (
               <div className="experience-item">
-                <h5>{`@${timelineItem.employer}`}</h5>
+                <a href={timelineItem.linkedinUrl} target="_blank">
+                  <img src={timelineItem.logoPath} height={timelineItem.logoHeight} />
+                </a>
+                {/*<h5>{`@${timelineItem.employer}`}</h5>*/}
                 <h3>{`${timelineItem.role}`}</h3>
                 <h5>{timelineItem.timespan}</h5>
                 <p>{timelineItem.description}</p>
