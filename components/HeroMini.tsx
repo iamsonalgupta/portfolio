@@ -7,32 +7,45 @@ const HeroMini = () => {
   return (
     <div>
       <div className="d-flex flex-column gap-3 mt-4">
-        <div className="d-flex gap-3 align-items-center">
-          <div className="img-wrapper d-none d-md-block">
-            <Image
-              className="img-fluid border border-2 border-dark rounded-circle hero-img"
-              priority={true}
-              src={HeroImg}
-              alt="sonal gupta"
-              height={120}
-            />
-          </div>
 
-          <div className="img-wrapper d-block d-md-none">
-            <Image
-              className="img-fluid border border-2 border-dark rounded-circle hero-img"
-              priority={true}
-              src={HeroImg}
-              alt="sonal gupta"
-              height={120}
-            />
-          </div>
+        <div className="d-none d-md-block">
+          <div className="d-flex gap-3 align-items-center">
+            <div className="img-wrapper">
+              <Image
+                className="img-fluid border border-2 border-dark rounded-circle hero-img"
+                priority={true}
+                src={HeroImg}
+                alt="sonal gupta"
+                height={140}
+              />
+            </div>
 
-          <div>
-            <p className="freelancer m-0" style={{ lineHeight: 1 }}>HI, I am</p>
-            <h1 className="fw-600" style={{ fontSize: 36 }}>
-              {profile.fullName}
-            </h1>
+            <div>
+              <p className="freelancer m-0" style={{ lineHeight: 1 }}>HI, I am</p>
+              <h1 className="fw-600" style={{ fontSize: 40 }}>
+                {profile.fullName}
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div className="d-block d-md-none">
+          <div className="d-flex gap-3 align-items-center">
+            <div className="img-wrapper">
+              <Image
+                className="img-fluid border border-2 border-dark rounded-circle hero-img"
+                priority={true}
+                src={HeroImg}
+                alt="sonal gupta"
+                height={90}
+              />
+            </div>
+            <div>
+              <p className="freelancer m-0" style={{ lineHeight: 1 }}>HI, I am</p>
+              <h1 className="fw-600" style={{ fontSize: 30 }}>
+                {profile.fullName}
+              </h1>
+            </div>
           </div>
         </div>
 
