@@ -66,15 +66,15 @@ const Hero = ({ classes }: { classes?: string }) => {
             </div>
           </div>
         </div>
-        <div className="col-12">
-          <Link href="#about_me" className="d-flex gap-4 align-items-center next-chapter mt-5">
-            <span className="page">01/11</span>
-            <span className="next">Next Chapter</span>
-            <span className="icon">
-              <i className="ph ph-arrow-elbow-right-down"></i>
-            </span>
-          </Link>
-        </div>
+        {/*<div className="col-12">*/}
+        {/*  <Link href="#about_me" className="d-flex gap-4 align-items-center next-chapter mt-5">*/}
+        {/*    <span className="page">01/11</span>*/}
+        {/*    <span className="next">Next Chapter</span>*/}
+        {/*    <span className="icon">*/}
+        {/*      <i className="ph ph-arrow-elbow-right-down"></i>*/}
+        {/*    </span>*/}
+        {/*  </Link>*/}
+        {/*</div>*/}
       </div>
     </section>
   );

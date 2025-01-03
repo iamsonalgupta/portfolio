@@ -258,14 +258,14 @@ const Services = () => {
 
         <div className="swiper-pagination"></div>
       </Swiper>
-      <div className="col-12">
-        <Link href="#attainments" className="d-flex gap-4 align-items-center next-chapter">
-          <span className="page">03/11</span>
-          <span className="next">Next Chapter</span>
+      {/*<div className="col-12">*/}
+      {/*  <Link href="#attainments" className="d-flex gap-4 align-items-center next-chapter">*/}
+      {/*    <span className="page">03/11</span>*/}
+      {/*    <span className="next">Next Chapter</span>*/}
 
-          <i className="ph ph-arrow-elbow-right-down"></i>
-        </Link>
-      </div>
+      {/*    <i className="ph ph-arrow-elbow-right-down"></i>*/}
+      {/*  </Link>*/}
+      {/*</div>*/}
     </section>
   );
 };

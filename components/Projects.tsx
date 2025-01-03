@@ -79,98 +79,98 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        <div className="col-12">
-          <Link href="#how_i_work" className="d-flex gap-4 align-items-center next-chapter">
-            <span className="page">07/11</span>
-            <span className="next">Next Chapter</span>
-            <i className="ph ph-arrow-elbow-right-down"></i>
-          </Link>
-        </div>
+        {/*<div className="col-12">*/}
+        {/*  <Link href="#how_i_work" className="d-flex gap-4 align-items-center next-chapter">*/}
+        {/*    <span className="page">07/11</span>*/}
+        {/*    <span className="next">Next Chapter</span>*/}
+        {/*    <i className="ph ph-arrow-elbow-right-down"></i>*/}
+        {/*  </Link>*/}
+        {/*</div>*/}
       </section>
-      {createPortal(
-        <div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog modal-fullscreen">
-            <div className="modal-content">
-              <div className="modal-body">
-                <button type="button" className="btn-close fs-3" data-bs-dismiss="modal" aria-label="Close">
-                  <i className="ph ph-x"></i>
-                </button>
+      {/*{createPortal(*/}
+      {/*  <div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">*/}
+      {/*    <div className="modal-dialog modal-fullscreen">*/}
+      {/*      <div className="modal-content">*/}
+      {/*        <div className="modal-body">*/}
+      {/*          <button type="button" className="btn-close fs-3" data-bs-dismiss="modal" aria-label="Close">*/}
+      {/*            <i className="ph ph-x"></i>*/}
+      {/*          </button>*/}
 
-                <div className="row gx-4 gy-4 gy-md-0">
-                  <div className="col-md-7 col-xl-9">
-                    <h1 className="mb-3 fw-semibold" id="project-title">
-                      {currentProject.name}
-                    </h1>
-                    <p className="mb-4 mb-xl-5">Designed and developed a fully functional e-commerce platform for a startup specializing in handcrafted goods. The project involved creating a visually appealing user interface, and ensuring an overall smooth shopping experience.</p>
-                    <h2 className="mb-3 fw-semibold">Project Goals</h2>
-                    <p className="mb-4">Developed a website for a non-profit organization aimed at raising awareness and funds for environmental conservation. The site features educational content, event management, and donation capabilities.</p>
-                    <ul className="list-plus">
-                      <li>Create a visually cohesive blog that aligns with the influencer&apos;s personal brand.</li>
-                      <li>Implement a secure and reliable payment gateway.</li>
-                      <li>Ensure the website is responsive and performs well across all devices.</li>
-                      <li>Optimize the site for search engines to increase organic traffic.</li>
-                    </ul>
-                  </div>
-                  <div className="col-md-5 col-xl-3">
-                    <div className="right-bar">
-                      <div>
-                        <p className="mb-1">Client</p>
-                        <h6 className="fw-semibold">Mashroom</h6>
-                      </div>
-                      <div>
-                        <p className="mb-1">Category</p>
-                        <h6 className="fw-semibold">User Experience</h6>
-                      </div>
-                      <div>
-                        <p className="mb-1">Start Date</p>
-                        <h6 className="fw-semibold">02/08/2023</h6>
-                      </div>
-                      <div>
-                        <p className="mb-1">End Date</p>
-                        <h6 className="fw-semibold">01/03/2024</h6>
-                      </div>
-                      <div>
-                        <p className="mb-1">Tools</p>
-                        <h6 className="fw-semibold">Adobe Xd, Figma</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="fw-medium mb-2">Challenges and Solutions</h3>
-                  <p className="mb-4">
-                    One of the main challenges was optimizing the website&apos;s load time while maintaining high-quality images of the products. To address this, I implemented lazy loading for images and used optimized image formats, resulting in a faster, smoother browsing experience without
-                    compromising visual quality.
-                  </p>
-                  <div className="row gx-4 gy-4 gy-md-0 mb-4 mb-xl-5 pb-3">
-                    <div className="col-md-6">
-                      <Image src={projectDetailsOne} className="w-100 img-fluid rounded-3" alt="" />
-                    </div>
-                    <div className="col-md-6">
-                      <Image src={projectDetailsTwo} className="w-100 img-fluid rounded-3" alt="" />
-                    </div>
-                  </div>
-                  <h4 className="mb-3">Key Features:</h4>
-                  <p className="mb-4">Developed a website for a non-profit organization aimed at raising awareness and funds for environmental conservation. The site features educational content, event management, and donation capabilities.</p>
-                  <ul className="bullet mb-4 pb-3 mb-xl-5">
-                    <li>Custom Blog Layouts: Designed multiple blog layouts to cater to different content types, including image-heavy posts and long-form articles.</li>
-                    <li>Content Management System: Integrated WordPress for easy content updates and management, allowing the influencer to focus on creating content without technical hurdles.</li>
-                    <li>Responsive Design: Ensured the blog is fully responsive, providing a seamless experience on smartphones, tablets, and desktops.</li>
-                    <li>SEO and Social Media Integration: Implemented SEO best practices and integrated social media sharing buttons, making it easy for readers to share posts across platforms.</li>
-                    <li>Newsletter Signup: Added a newsletter signup form to help the influencer grow their email list and maintain engagement with followers.</li>
-                  </ul>
-                  <div className="outcome">
-                    <h5 className="mb-3">Outcome:</h5>
-                    <p>The blog quickly gained traction, attracting a growing audience and enhancing the influencer’s online presence. The user-friendly design and seamless social media integration led to higher engagement rates and increased content sharing.</p>
-                  </div>
+      {/*          <div className="row gx-4 gy-4 gy-md-0">*/}
+      {/*            <div className="col-md-7 col-xl-9">*/}
+      {/*              <h1 className="mb-3 fw-semibold" id="project-title">*/}
+      {/*                {currentProject.name}*/}
+      {/*              </h1>*/}
+      {/*              <p className="mb-4 mb-xl-5">Designed and developed a fully functional e-commerce platform for a startup specializing in handcrafted goods. The project involved creating a visually appealing user interface, and ensuring an overall smooth shopping experience.</p>*/}
+      {/*              <h2 className="mb-3 fw-semibold">Project Goals</h2>*/}
+      {/*              <p className="mb-4">Developed a website for a non-profit organization aimed at raising awareness and funds for environmental conservation. The site features educational content, event management, and donation capabilities.</p>*/}
+      {/*              <ul className="list-plus">*/}
+      {/*                <li>Create a visually cohesive blog that aligns with the influencer&apos;s personal brand.</li>*/}
+      {/*                <li>Implement a secure and reliable payment gateway.</li>*/}
+      {/*                <li>Ensure the website is responsive and performs well across all devices.</li>*/}
+      {/*                <li>Optimize the site for search engines to increase organic traffic.</li>*/}
+      {/*              </ul>*/}
+      {/*            </div>*/}
+      {/*            <div className="col-md-5 col-xl-3">*/}
+      {/*              <div className="right-bar">*/}
+      {/*                <div>*/}
+      {/*                  <p className="mb-1">Client</p>*/}
+      {/*                  <h6 className="fw-semibold">Mashroom</h6>*/}
+      {/*                </div>*/}
+      {/*                <div>*/}
+      {/*                  <p className="mb-1">Category</p>*/}
+      {/*                  <h6 className="fw-semibold">User Experience</h6>*/}
+      {/*                </div>*/}
+      {/*                <div>*/}
+      {/*                  <p className="mb-1">Start Date</p>*/}
+      {/*                  <h6 className="fw-semibold">02/08/2023</h6>*/}
+      {/*                </div>*/}
+      {/*                <div>*/}
+      {/*                  <p className="mb-1">End Date</p>*/}
+      {/*                  <h6 className="fw-semibold">01/03/2024</h6>*/}
+      {/*                </div>*/}
+      {/*                <div>*/}
+      {/*                  <p className="mb-1">Tools</p>*/}
+      {/*                  <h6 className="fw-semibold">Adobe Xd, Figma</h6>*/}
+      {/*                </div>*/}
+      {/*              </div>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*          <div>*/}
+      {/*            <h3 className="fw-medium mb-2">Challenges and Solutions</h3>*/}
+      {/*            <p className="mb-4">*/}
+      {/*              One of the main challenges was optimizing the website&apos;s load time while maintaining high-quality images of the products. To address this, I implemented lazy loading for images and used optimized image formats, resulting in a faster, smoother browsing experience without*/}
+      {/*              compromising visual quality.*/}
+      {/*            </p>*/}
+      {/*            <div className="row gx-4 gy-4 gy-md-0 mb-4 mb-xl-5 pb-3">*/}
+      {/*              <div className="col-md-6">*/}
+      {/*                <Image src={projectDetailsOne} className="w-100 img-fluid rounded-3" alt="" />*/}
+      {/*              </div>*/}
+      {/*              <div className="col-md-6">*/}
+      {/*                <Image src={projectDetailsTwo} className="w-100 img-fluid rounded-3" alt="" />*/}
+      {/*              </div>*/}
+      {/*            </div>*/}
+      {/*            <h4 className="mb-3">Key Features:</h4>*/}
+      {/*            <p className="mb-4">Developed a website for a non-profit organization aimed at raising awareness and funds for environmental conservation. The site features educational content, event management, and donation capabilities.</p>*/}
+      {/*            <ul className="bullet mb-4 pb-3 mb-xl-5">*/}
+      {/*              <li>Custom Blog Layouts: Designed multiple blog layouts to cater to different content types, including image-heavy posts and long-form articles.</li>*/}
+      {/*              <li>Content Management System: Integrated WordPress for easy content updates and management, allowing the influencer to focus on creating content without technical hurdles.</li>*/}
+      {/*              <li>Responsive Design: Ensured the blog is fully responsive, providing a seamless experience on smartphones, tablets, and desktops.</li>*/}
+      {/*              <li>SEO and Social Media Integration: Implemented SEO best practices and integrated social media sharing buttons, making it easy for readers to share posts across platforms.</li>*/}
+      {/*              <li>Newsletter Signup: Added a newsletter signup form to help the influencer grow their email list and maintain engagement with followers.</li>*/}
+      {/*            </ul>*/}
+      {/*            <div className="outcome">*/}
+      {/*              <h5 className="mb-3">Outcome:</h5>*/}
+      {/*              <p>The blog quickly gained traction, attracting a growing audience and enhancing the influencer’s online presence. The user-friendly design and seamless social media integration led to higher engagement rates and increased content sharing.</p>*/}
+      {/*            </div>*/}
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>,
-        document.body,
-      )}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>,*/}
+      {/*  document.body,*/}
+      {/*)}*/}
     </>
   );
 };

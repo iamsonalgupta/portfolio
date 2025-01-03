@@ -125,6 +125,7 @@ export default function Home() {
           <Experience />
 
           {/* <!-- projects --> */}
+          <br />
           <Projects />
 
           {/* <!-- how i work --> */}
@@ -137,6 +138,7 @@ export default function Home() {
           {/*<Testimonials />*/}
 
           {/* <!-- contact --> */}
+          <br />
           <Contact />
         </div>
       </main>

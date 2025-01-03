@@ -161,9 +161,9 @@ const Contact = () => {
           </div>
         </div>
       </form>
-      <div className="col mt-5 pt-5 next-chapter">
-        <span className="page">11/11</span>
-      </div>
+      {/*<div className="col mt-5 pt-5 next-chapter">*/}
+      {/*  <span className="page">11/11</span>*/}
+      {/*</div>*/}
     </section>
   );
 };

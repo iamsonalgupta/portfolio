@@ -80,15 +80,15 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className="col-12">
-        <Link href="#projects" className="d-flex gap-4 align-items-center next-chapter">
-          <span className="page">06/11</span>
-          <span className="next">Next Chapter</span>
-          <span className="icon">
-            <i className="ph ph-arrow-elbow-right-down"></i>
-          </span>
-        </Link>
-      </div>
+      {/*<div className="col-12">*/}
+      {/*  <Link href="#projects" className="d-flex gap-4 align-items-center next-chapter">*/}
+      {/*    <span className="page">06/11</span>*/}
+      {/*    <span className="next">Next Chapter</span>*/}
+      {/*    <span className="icon">*/}
+      {/*      <i className="ph ph-arrow-elbow-right-down"></i>*/}
+      {/*    </span>*/}
+      {/*  </Link>*/}
+      {/*</div>*/}
     </section>
   );
 };
