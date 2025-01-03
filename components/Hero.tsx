@@ -29,6 +29,7 @@ const Hero = ({ classes }: { classes?: string }) => {
             <h1 style={{ fontSize: 84 }}>
               {profile.fullName}
             </h1>
+
             {/*<Typewriter*/}
             {/*  component={"h1"}*/}
             {/*  options={{*/}
@@ -50,21 +51,7 @@ const Hero = ({ classes }: { classes?: string }) => {
           </div>
         </div>
         <div className="col-12 col-md-5 offset-md-1 offset-xxl-2 col-xl-4 d-flex justify-content-center">
-          <div className="img-wrapper">
-            <div className="waves-top">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <Image className="img-fluid rounded-circle hero-img" priority={true} src={HeroImg} alt="" />
-            <div className="waves-bottom">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
+          <ProfilePic />
         </div>
         {/*<div className="col-12">*/}
         {/*  <Link href="#about_me" className="d-flex gap-4 align-items-center next-chapter mt-5">*/}
@@ -79,5 +66,24 @@ const Hero = ({ classes }: { classes?: string }) => {
     </section>
   );
 };
+
+
+const ProfilePic = () => (
+  <div className="img-wrapper">
+    <div className="waves-top">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <Image className="img-fluid rounded-circle hero-img" priority={true} src={HeroImg} alt="" />
+    <div className="waves-bottom">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+)
 
 export default Hero;

@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { SolarFileTextBoldDuotone } from "@/components/icons/SolarFileTextBoldDuotone";
 import { SvgSpinners270Ring } from "@/components/icons/SvgSpinners270Ring";
+import HeroMini from "@/components/HeroMini";
 
 export default function Home() {
   const [navOpen, setNavOpen] = useState(false);
@@ -104,43 +105,51 @@ export default function Home() {
             </ul>
           </nav>
 
-          <Hero classes="hero-left-bar" />
+          <div className="d-block d-lg-none">
+            <HeroMini />
+          </div>
+
+            <div className="d-none d-lg-block">
+              <Hero classes="hero-left-bar" />
+            </div>
 
 
-          <div className="nav-overlay d-xl-none" onClick={() => setNavOpen(false)}></div>
+            {/*<div className="nav-overlay d-xl-none" onClick={() => setNavOpen(false)}></div>*/}
 
-          {/* <!-- about me --> */}
-          <AboutMe />
+            {/* <!-- about me --> */}
+            <div className="d-none d-lg-block">
+              <AboutMe />
+            </div>
 
-          {/* <!-- services --> */}
-          <Services />
+            {/* <!-- services --> */}
+            <Services />
 
-          {/* <!-- attainments --> */}
-          {/*<Attainments />*/}
+            {/* <!-- attainments --> */}
+            {/*<Attainments />*/}
 
-          {/* <!-- fun facts --> */}
-          {/*<FunFacts />*/}
+            {/* <!-- fun facts --> */}
+            {/*<FunFacts />*/}
 
-          {/* <!-- experience --> */}
-          <Experience />
+            {/* <!-- experience --> */}
+            <Experience />
 
-          {/* <!-- projects --> */}
-          <br />
-          <Projects />
+            {/* <!-- projects --> */}
+            <br />
+            <Projects />
 
-          {/* <!-- how i work --> */}
-          {/*<HowIWork />*/}
+            {/* <!-- how i work --> */}
+            {/*<HowIWork />*/}
 
-          {/* blogs */}
-          {/*<Blogs />*/}
+            {/* blogs */}
+            {/*<Blogs />*/}
 
-          {/* <!-- testimonials --> */}
-          {/*<Testimonials />*/}
+            {/* <!-- testimonials --> */}
+            {/*<Testimonials />*/}
 
-          {/* <!-- contact --> */}
-          <br />
-          <Contact />
-        </div>
+            {/* <!-- contact --> */}
+            <br />
+            <Contact />
+          </div>
       </main>
       {/* <!-- color switcher --> */}
     </>
