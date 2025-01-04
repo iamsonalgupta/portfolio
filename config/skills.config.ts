@@ -1,12 +1,21 @@
 export const skills = [
   {
-    title: "MERN Stack Developer",
+    title: "Web Development",
     highlights: [
       // { title: "MongoDB", logo: 'mongodb.png' },
       { title: "Express JS", logo: "expressjs.png" },
       { title: "React JS", logo: "reactjs.png" },
       { title: "Node JS", logo: "nodejs.png" },
       { title: "Typescript", logo: "typescript.png" }
+    ]
+  },
+  {
+    title: "Oracle Technologies",
+    highlights: [
+      { title: "Oracle Integration Cloud", logo: "arrow-right.png" },
+      { title: "VBCS", logo: "arrow-right.png" },
+      { title: "Oracle Fusion", logo: "arrow-right.png" },
+      { title: "HCM Extracts", logo: "arrow-right.png" }
     ]
   },
   {
@@ -17,7 +26,8 @@ export const skills = [
       { title: "Monitoring", logo: "db-monitoring.png" },
       { title: "Multi Tenancy", logo: "db-multi-tenancy.png" }
     ]
-  }, {
+  },
+  {
     title: "API Integrations",
     highlights: [
       { title: "Outlook", logo: "outlook.png" },
@@ -25,5 +35,5 @@ export const skills = [
       { title: "Sendgrid", logo: "sendgrid.png" },
       { title: "Twillo SMS", logo: "twillo.png" }
     ]
-  }
+  },
 ];
