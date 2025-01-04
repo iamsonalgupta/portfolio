@@ -71,7 +71,16 @@ const HeroMini = () => {
 
         <div>
           <div>
-            <p className="fw-normal fs-6 description">{seo.description}</p>
+            <p className="fw-normal fs-6 description">
+              <div className="hero-gradient fw-bold">
+                Full Stack developer
+              </div>, <div className="hero-gradient fw-bold">
+              MSSQL DBA
+            </div> and <div className="hero-gradient fw-bold">
+              OIC Technical Consultant
+            </div> specializing in creating scalable, secure, and
+              high-performance server-side applications and databases
+            </p>
           </div>
 
           <div className="mt-4">
@@ -93,9 +102,9 @@ const HeroMini = () => {
 };
 
 const HighlightWrapper = ({ text }: { text: string }) => (
-  <strong className="underlinedXfst-italic">
+  <div className="fw-bold">
     {text}
-  </strong>
+  </div>
 );
 
 export default HeroMini;

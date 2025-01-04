@@ -50,6 +50,22 @@ Version: 1.0
 @import "mixins.scss";
 @import "../../node_modules/react-modal-video/scss/modal-video.scss";
 
+
+.hero-gradient {
+  background: #968B72;
+  background: linear-gradient(to right, #67604E 0%, #020202 80%);
+  //background: linear-gradient(to top, #968B72 0%, #020202 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emp-gradient {
+  background: #582D9D;
+  background: linear-gradient(to right, #582D9D 0%, #020202 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 // Reset
 body {
   font-family: "Poppins", sans-serif;

@@ -15,10 +15,10 @@ const AboutMe = () => {
       {/*<SectionTitle subtitle="Some Word About Me" title="Know Me More" />*/}
       <div className="row mb-4 mb-lg-5 align-items-center">
         <div className="col-lg-7 col-xl-8 about-desc">
-          <h2>I&apos;m Sonal Gupta</h2>
+          <h2 className="">I&apos;m <span className="hero-gradient fw-bold">{profile.fullName}</span></h2>
           {/*, a Web Developer*/}
           <p className="desc">
-            I have experience in NodeJS, Typescript, ExpressJS, MongoDB and MSSQL. Over the past 2.5 years I have built
+            I have experience in NodeJS, Typescript, ExpressJS, MongoDB and MSSQL. Over the past 2 years I have built
             REST APIs, developed third party integrations and worked as database administrator to implement secure and
             scalable databases.
           </p>

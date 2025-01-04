@@ -39,9 +39,9 @@ const Hero = ({ classes }: { classes?: string }) => {
       <div className="row gx-4 justify-content-center align-items-center">
         <div className="col-12 col-md-6 col-xl-6 hero-content">
           <div className="mb-3">
-            <h4 className="text-uppercase freelancer">HI, I am</h4>
+            <h4 style={{ fontSize: 28 }} className="text-uppercase freelancer">HI, I am</h4>
             {/* SOFTWARE ENGINEER */}
-            <h1 className="profilename" style={{ fontSize: 84 }}>
+            <h1 className="profilename xhero-gradient" style={{ fontSize: 84 }}>
               {profile.fullName}
             </h1>
 
@@ -53,7 +53,17 @@ const Hero = ({ classes }: { classes?: string }) => {
             {/*    loop: true,*/}
             {/*  }}*/}
             {/*/>*/}
-            <h2 className="description fw-normal fs-5">{seo.description}</h2>
+            {/*<h2 className="description fw-normal fs-5">{seo.description}</h2>*/}
+            <h2 className="description fw-normal fs-5">
+              <div className="hero-gradient fw-bold">
+                Full Stack developer
+              </div>, <div className="hero-gradient fw-bold">
+              MSSQL DBA
+            </div> and <div className="hero-gradient fw-bold">
+              OIC Technical Consultant
+            </div> specializing in creating scalable, secure, and
+              high-performance server-side applications and databases
+            </h2>
             {/*<p className="description">based in {profile.address.city}, {profile.address.state}</p>*/}
           </div>
           <div className="d-flex gap-4 mt-5">
