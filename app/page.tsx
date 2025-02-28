@@ -109,47 +109,47 @@ export default function Home() {
             <HeroMini />
           </div>
 
-            <div className="d-none d-lg-block">
-              <Hero classes="hero-left-bar" />
-            </div>
-
-
-            {/*<div className="nav-overlay d-xl-none" onClick={() => setNavOpen(false)}></div>*/}
-
-            {/* <!-- about me --> */}
-            <div className="d-none d-lg-block">
-              <AboutMe />
-            </div>
-
-            {/* <!-- services --> */}
-            <Services />
-
-            {/* <!-- attainments --> */}
-            {/*<Attainments />*/}
-
-            {/* <!-- fun facts --> */}
-            {/*<FunFacts />*/}
-
-            {/* <!-- experience --> */}
-            <Experience />
-
-            {/* <!-- projects --> */}
-            <br />
-            <Projects />
-
-            {/* <!-- how i work --> */}
-            {/*<HowIWork />*/}
-
-            {/* blogs */}
-            {/*<Blogs />*/}
-
-            {/* <!-- testimonials --> */}
-            {/*<Testimonials />*/}
-
-            {/* <!-- contact --> */}
-            <br />
-            <Contact />
+          <div className="d-none d-lg-block">
+            <Hero classes="hero-left-bar" />
           </div>
+
+
+          {/*<div className="nav-overlay d-xl-none" onClick={() => setNavOpen(false)}></div>*/}
+
+          {/* <!-- about me --> */}
+          <div className="d-none d-lg-block">
+            <AboutMe />
+          </div>
+
+          {/* <!-- services --> */}
+          <Services />
+
+          {/* <!-- attainments --> */}
+          {/*<Attainments />*/}
+
+          {/* <!-- fun facts --> */}
+          {/*<FunFacts />*/}
+
+          {/* <!-- experience --> */}
+          <Experience />
+
+          {/* <!-- projects --> */}
+          <br />
+          <Projects />
+
+          {/* <!-- how i work --> */}
+          {/*<HowIWork />*/}
+
+          {/* blogs */}
+          {/*<Blogs />*/}
+
+          {/* <!-- testimonials --> */}
+          {/*<Testimonials />*/}
+
+          {/* <!-- contact --> */}
+          <br />
+          <Contact />
+        </div>
       </main>
       {/* <!-- color switcher --> */}
     </>

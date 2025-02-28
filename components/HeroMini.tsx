@@ -11,7 +11,7 @@ const HeroMini = () => {
     y: 20,
     duration: 1,
     delay: 0.5,
-    ease: "power2.out",
+    ease: "power2.out"
   });
 
   gsap.from(".description", {
@@ -19,7 +19,7 @@ const HeroMini = () => {
     y: 20,
     duration: 1.2,
     delay: 0.4,
-    ease: "power2.out",
+    ease: "power2.out"
   });
 
   return (
@@ -73,13 +73,14 @@ const HeroMini = () => {
           <div>
             <p className="fw-normal fs-6 description">
               <div className="hero-gradient fw-bold">
-                Full Stack developer
-              </div>, <div className="hero-gradient fw-bold">
+                OIC Technical Consultant
+              </div>
+              , <div className="hero-gradient fw-bold">
               MSSQL DBA
             </div> and <div className="hero-gradient fw-bold">
-              OIC Technical Consultant
-            </div> specializing in creating scalable, secure, and
-              high-performance server-side applications and databases
+              Full Stack developer
+            </div> specializing in creating oracle integrations, MSSQL Database Administration and NodeJS web
+              development.
             </p>
           </div>
 

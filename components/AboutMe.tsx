@@ -18,9 +18,17 @@ const AboutMe = () => {
           <h2 className="">I&apos;m <span className="hero-gradient fw-bold">{profile.fullName}</span></h2>
           {/*, a Web Developer*/}
           <p className="desc">
-            I have experience in NodeJS, Typescript, ExpressJS, MongoDB and MSSQL. Over the past 2 years I have built
-            REST APIs, developed third party integrations and worked as database administrator to implement secure and
-            scalable databases.
+            {/*I have experience in NodeJS, Typescript, ExpressJS, MongoDB and MSSQL. Over the past 2 years I have built*/}
+            {/*REST APIs, developed third party integrations and worked as database administrator to implement secure and*/}
+            {/*scalable databases.*/}
+
+            I am experienced in creating and managing Oracle Integration Cloud (OIC) integrations using REST, SOAP, FTP, and database adapters. My skills include data migration with FBDI and HCM Data Loader, error handling, and process automation. I have worked with Oracle VBCS for UI development, BIP for reporting, and XSD/XSLT for data transformation.
+
+            {/* 1 year in Oracle Integration Cloud and Oracle Fusion and 2 years of experience as a Full Stack Developer and Database Administrator I offer a comprehensive skill set backed by hands-on experience
+
+            1 year in Oracle Integration Cloud
+
+            I have successfully designed and developed integrations for AR Invoice, AP Payable processes and scheduled FBDI Automation integrations. I have experience working with data migration tools such as FBDI and HDL and creating BI Publisher reports, XSD/XSLT schemas, and HCM extracts. I have built ERP-SFTP integrations for bulk data transfer, GL Daily Rates loading, and user feedback management, ensuring reliability through testing. */}
           </p>
           <div className="row about-contact">
             <div className="col-sm-6 about-contact-item">

@@ -18,7 +18,7 @@ const Hero = ({ classes }: { classes?: string }) => {
       y: 20,
       duration: 1.2,
       delay: 0.4,
-      ease: "power2.out",
+      ease: "power2.out"
     });
 
     gsap.from(".description", {
@@ -26,7 +26,7 @@ const Hero = ({ classes }: { classes?: string }) => {
       y: 20,
       duration: 1.4,
       delay: 0.8,
-      ease: "power2.out",
+      ease: "power2.out"
     });
 
     const freelancer = SplitType.create(".freelancer").chars;
@@ -56,13 +56,14 @@ const Hero = ({ classes }: { classes?: string }) => {
             {/*<h2 className="description fw-normal fs-5">{seo.description}</h2>*/}
             <h2 className="description fw-normal fs-5">
               <div className="hero-gradient fw-bold">
-                Full Stack developer
-              </div>, <div className="hero-gradient fw-bold">
+                OIC Technical Consultant
+              </div>
+              , <div className="hero-gradient fw-bold">
               MSSQL DBA
             </div> and <div className="hero-gradient fw-bold">
-              OIC Technical Consultant
-            </div> specializing in creating scalable, secure, and
-              high-performance server-side applications and databases
+              Full Stack developer
+            </div> specializing in creating oracle integrations, MSSQL Database Administration and NodeJS web
+              development.
             </h2>
             {/*<p className="description">based in {profile.address.city}, {profile.address.state}</p>*/}
           </div>
@@ -109,6 +110,6 @@ const ProfilePic = () => (
       <span></span>
     </div>
   </div>
-)
+);
 
 export default Hero;
