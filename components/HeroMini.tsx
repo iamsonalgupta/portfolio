@@ -86,13 +86,7 @@ const HeroMini = () => {
 
           <div className="mt-4">
             <p className="desc description">
-              I have experience in <HighlightWrapper text="NodeJS" />, <HighlightWrapper
-              text="Typescript" />, <HighlightWrapper text="ExpressJS" />, <HighlightWrapper
-              text="MongoDB" /> and <HighlightWrapper text="MSSQL" />. Over the past 2 years I have
-              built{" "}
-              <HighlightWrapper text="REST APIs" />, developed <HighlightWrapper text="Third Party Integrations" /> and
-              worked as <HighlightWrapper text="Database Administration" /> to implement secure and
-              scalable databases.
+              I am experienced in creating and managing Oracle Integration Cloud (OIC) integrations using REST, SOAP, FTP, and database adapters. My skills include data migration with FBDI and HCM Data Loader, error handling, and process automation. I have worked with Oracle VBCS for UI development, BIP for reporting, and XSD/XSLT for data transformation.
             </p>
           </div>
         </div>

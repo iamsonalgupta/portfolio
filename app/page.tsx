@@ -78,13 +78,13 @@ export default function Home() {
               {/*  </Link>*/}
               {/*</li>*/}
               <li className="nav-link">
-                <Link href="#experience">
-                  <span className="text">experiences</span>
+                <Link href="#projects">
+                  <span className="text">projects</span>
                 </Link>
               </li>
               <li className="nav-link">
-                <Link href="#projects">
-                  <span className="text">projects</span>
+                <Link href="#experience">
+                  <span className="text">experiences</span>
                 </Link>
               </li>
               {/*<li className="nav-link">*/}
@@ -130,12 +130,12 @@ export default function Home() {
           {/* <!-- fun facts --> */}
           {/*<FunFacts />*/}
 
-          {/* <!-- experience --> */}
-          <Experience />
-
           {/* <!-- projects --> */}
           <br />
           <Projects />
+
+          {/* <!-- experience --> */}
+          <Experience />
 
           {/* <!-- how i work --> */}
           {/*<HowIWork />*/}
